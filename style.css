@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+    background: linear-gradient(to bottom right, #e22b2b, #dd00ff); /* Purple to Pink Gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden; /* Hide potential overflow from rotated content */
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: rotate(360deg); /* Rotate the entire content to match image orientation */
+    transform-origin: center center;
+    position: absolute; /* Position absolutely to allow rotation without affecting flow */
+    left: 0; /* Adjust positioning after rotation */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.main-content {
+    text-align: center;
+    flex-grow: 1; /* Allow content to take up available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px; /* Adjust as needed for footer spacing */
+}
+
+.welcome-text {
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.main-title {
+    font-size: 4em; /* Adjust as needed */
+    font-weight: bold;
+    margin: 0;
+    line-height: 1;
+}
+
+.description {
+    max-width: 600px;
+    margin-top: 20px;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.data-point {
+    text-align: center;
+}
+
+.data-point .value {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: block;
+}
+
+.data-point .label {
+    font-size: 0.7em;
+    display: block;
+}
